@@ -1,5 +1,12 @@
 plugins {
     java
+    jacoco
+}
+
+tasks.jacocoTestReport {
+    reports {
+        csv.required.set(true)
+    }
 }
 
 group = "org.example"
